@@ -1,38 +1,296 @@
-.App {
-  text-align: center;
+body {
+  min-width:700px;        /* Suppose you want minimum width of 1000px */
+  width: auto !important;  /* Firefox will set width as auto */
+  width:700px; 
+}
+.container {
+  display: flex;
+flex-direction: column;
+width: 100%;
+height: 100%;
+overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+.navbar {
+  width: 100%;
+  display: grid;
+grid-template-columns: 1fr 1fr;
+  align-items: center;
+ 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar__left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.navbar__right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+
+}
+
+.navbar__logo__text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar__right__item {
+ padding-right: 1rem;
+ padding-left: 1rem;
+ font-weight: 500;
+
+
+}
+
+.navbar__border {
+  border-right: 1px solid black;
+}
+.navbar__button {
+  min-width: 125px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: black;
+  border-radius: 7px;
+  border: none;
+  font-size: 14px;
+  margin-left: 2rem;
+color: #fff;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.main__left {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}
+
+.main__left__info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 64px;
+  font-family: 'Texturina', serif;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.main__right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+
+
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.main__right__info {
+  width: 100%;
+display: flex;
+  height: 60%;
+grid-template-columns: 1fr 1fr;
+max-width: 350px;
+align-items: flex-start;
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main__right__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+  width: 350px;
 }
+
+.main__right__title {
+  font-size: 90px;
+  
+  font-weight: 700;
+
+  letter-spacing: -10px;
+}
+
+.main__right__subtitle {
+  font-size: 14px;
+
+}
+
+@media only screen and (max-width: 1050px) {
+  .navbar__right {
+    font-size: 12px;
+  }
+
+  .navbar__button {
+    font-size: 12px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar__right {
+    font-size: 12px;
+  }
+
+  .navbar__button {
+    font-size: 12px;
+  }
+
+  .navbar {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__left {
+    padding-bottom: 0.5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .navbar__right__item {
+    border: none;
+
+  }
+
+  .main {
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ width: 100%;
+ height: 100%;
+ grid-template-columns: 1fr;
+  }
+
+  .main__left {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+ 
+.main__right__info {
+  width: 100%;
+display: flex;
+  
+grid-template-columns: 1fr 1fr;
+max-width: 350px;
+align-items: flex-end;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+
+
+}
+
+.main__right {
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.main__right__text {
+align-items: center;
+justify-content: center;
+  
+}
+
+  
+
+
+  
+}
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(20px);
+
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+ .container:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.3;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
