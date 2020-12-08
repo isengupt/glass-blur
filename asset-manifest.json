@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/glass-blur/static/css/main.fe1db94d.chunk.css",
-    "main.js": "/glass-blur/static/js/main.4de261a5.chunk.js",
-    "main.js.map": "/glass-blur/static/js/main.4de261a5.chunk.js.map",
+    "main.css": "/glass-blur/static/css/main.cf639d31.chunk.css",
+    "main.js": "/glass-blur/static/js/main.dbc30391.chunk.js",
+    "main.js.map": "/glass-blur/static/js/main.dbc30391.chunk.js.map",
     "runtime-main.js": "/glass-blur/static/js/runtime-main.e32378ee.js",
     "runtime-main.js.map": "/glass-blur/static/js/runtime-main.e32378ee.js.map",
     "static/js/2.1d93b2a7.chunk.js": "/glass-blur/static/js/2.1d93b2a7.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.663a8092.chunk.js": "/glass-blur/static/js/3.663a8092.chunk.js",
     "static/js/3.663a8092.chunk.js.map": "/glass-blur/static/js/3.663a8092.chunk.js.map",
     "index.html": "/glass-blur/index.html",
-    "static/css/main.fe1db94d.chunk.css.map": "/glass-blur/static/css/main.fe1db94d.chunk.css.map",
+    "static/css/main.cf639d31.chunk.css.map": "/glass-blur/static/css/main.cf639d31.chunk.css.map",
     "static/js/2.1d93b2a7.chunk.js.LICENSE.txt": "/glass-blur/static/js/2.1d93b2a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e32378ee.js",
     "static/js/2.1d93b2a7.chunk.js",
-    "static/css/main.fe1db94d.chunk.css",
-    "static/js/main.4de261a5.chunk.js"
+    "static/css/main.cf639d31.chunk.css",
+    "static/js/main.dbc30391.chunk.js"
   ]
 }
