@@ -19,7 +19,7 @@ function App() {
         </div>
         <div className="frame__demos">
           <a
-            href="https://isengupt.github.io/dependencies-web/"
+            href="https://isengupt.github.io/real-glitch/"
             activeClassName="frame__demo--current"
             className="frame__demo"
           >
