@@ -7,18 +7,23 @@ function Navbar() {
     <div className="navbar">
     <div className="navbar__left">
         
-        <div className="navbar__logo__text">selection</div>
+
+          <h1 className="frame__title">Ishan Sengupta</h1>
+          <p className="frame__tagline">Front-end experimentation</p>
+
     </div> 
         <div className="navbar__right">
+        <a className="navbar__right__item navbar__border"
         
+        href="https://www.dropbox.com/s/wchtpctilaxujfv/ISHAN_UPDATED_RESUME.pdf?dl=0">
+            Resume
+          </a>
+          
             <div className="navbar__right__item navbar__border">
-                Features
+              Random
             </div>
             <div className="navbar__right__item navbar__border">
-               Why Selection
-            </div>
-            <div className="navbar__right__item navbar__border">
-              Pricing
+             Help
             </div>
             <div className="navbar__right__item">
              Blog
